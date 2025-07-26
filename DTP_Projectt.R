@@ -16,7 +16,7 @@ summary(file_path)
 library(ggplot2)
 
 # histogram of MonsoonIntensity
-ggplot(file_path, aes(x = MonsoonIntensity, TopographyDrainage)) +
+ggplot(file_path, aes(x = MonsoonIntensity)) +
   geom_histogram(binwidth = 0.5, fill = "skyblue", color = "black") +
   labs(title = "Distribution of Monsoon Intensity", x = "Monsoon Intensity", y = "Count")
 
